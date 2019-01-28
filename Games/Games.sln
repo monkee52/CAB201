@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Games", "Games\Games.csproj", "{5380CEC4-3FA1-47D7-8E2F-3B66A91FBF77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Low Level Objects Library", "Low Level Objects Library\Low Level Objects Library.csproj", "{120E8367-CEDD-4679-ADEA-31F34C552B13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Games Logic Library", "Games Logic Library\Games Logic Library.csproj", "{67509745-C712-44C5-9560-3CB6F4764290}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5380CEC4-3FA1-47D7-8E2F-3B66A91FBF77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5380CEC4-3FA1-47D7-8E2F-3B66A91FBF77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5380CEC4-3FA1-47D7-8E2F-3B66A91FBF77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5380CEC4-3FA1-47D7-8E2F-3B66A91FBF77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{120E8367-CEDD-4679-ADEA-31F34C552B13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{120E8367-CEDD-4679-ADEA-31F34C552B13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{120E8367-CEDD-4679-ADEA-31F34C552B13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{120E8367-CEDD-4679-ADEA-31F34C552B13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67509745-C712-44C5-9560-3CB6F4764290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67509745-C712-44C5-9560-3CB6F4764290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67509745-C712-44C5-9560-3CB6F4764290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67509745-C712-44C5-9560-3CB6F4764290}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

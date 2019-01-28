@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5380CEC4-3FA1-47D7-8E2F-3B66A91FBF77}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Games</RootNamespace>
+    <AssemblyName>Games</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormGameCrazyEights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGameCrazyEights.Designer.cs">
+      <DependentUpon>FormGameCrazyEights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGameCrazyEightsSelectSuit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGameCrazyEightsSelectSuit.Designer.cs">
+      <DependentUpon>FormGameCrazyEightsSelectSuit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGameSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGameSelector.Designer.cs">
+      <DependentUpon>FormGameSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGameSnakeEyes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGameSnakeEyes.Designer.cs">
+      <DependentUpon>FormGameSnakeEyes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGameSubSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGameSubSelector.Designer.cs">
+      <DependentUpon>FormGameSubSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGameTwentyOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGameTwentyOne.Designer.cs">
+      <DependentUpon>FormGameTwentyOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGameTwoUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGameTwoUp.Designer.cs">
+      <DependentUpon>FormGameTwoUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games.cs" />
+    <Compile Include="Images.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormGameCrazyEights.resx">
+      <DependentUpon>FormGameCrazyEights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGameCrazyEightsSelectSuit.resx">
+      <DependentUpon>FormGameCrazyEightsSelectSuit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGameSelector.resx">
+      <DependentUpon>FormGameSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGameSnakeEyes.resx">
+      <DependentUpon>FormGameSnakeEyes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGameSubSelector.resx">
+      <DependentUpon>FormGameSubSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGameTwentyOne.resx">
+      <DependentUpon>FormGameTwentyOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGameTwoUp.resx">
+      <DependentUpon>FormGameTwoUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coins\Heads150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coins\Tails150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dice\Face_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dice\Face_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dice\Face_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dice\Face_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dice\Face_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dice\Face_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\CardBack_Blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\CardBack_Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\ClubAce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\ClubEight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\ClubFive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\ClubFour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\ClubJack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\ClubKing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\ClubNine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\ClubQueen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\ClubSeven.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\ClubSix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\ClubTen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\ClubThree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\ClubTwo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\DiamondAce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\DiamondEight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\DiamondFive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\DiamondFour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\DiamondJack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\DiamondKing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\DiamondNine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\DiamondQueen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\DiamondSeven.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\DiamondSix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\DiamondTen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\DiamondThree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\DiamondTwo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\FirstJoker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\HeartAce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\HeartEight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\HeartFive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\HeartFour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\HeartJack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\HeartKing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\HeartNine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\HeartQueen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\HeartSeven.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\HeartSix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\HeartTen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\HeartThree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\HeartTwo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\SecondJoker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\SpadeAce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\SpadeEight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\SpadeFive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\SpadeFour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\SpadeJack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\SpadeKing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\SpadeNine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\SpadeQueen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\SpadeSeven.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\SpadeSix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\SpadeTen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\SpadeThree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cards\SpadeTwo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Games Logic Library\Games Logic Library.csproj">
+      <Project>{67509745-c712-44c5-9560-3cb6f4764290}</Project>
+      <Name>Games Logic Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Low Level Objects Library\Low Level Objects Library.csproj">
+      <Project>{120e8367-cedd-4679-adea-31f34c552b13}</Project>
+      <Name>Low Level Objects Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
